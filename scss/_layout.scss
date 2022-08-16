@@ -9,11 +9,19 @@
   }
 
   &__nav {
+    font-size: 1.5rem;
+    background-color: $primary;
+    color: $on-primary;
     grid-row: 1 / 3;
+
+    h2 {
+      margin-left: 24px;
+    }
   }
 
   &__main {
     grid-row: 2 / 3;
+
     // Main Content Grid
     display: grid;
     grid-template-columns: 5fr 1fr;

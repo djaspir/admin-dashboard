@@ -1,0 +1,28 @@
+// NAV ITEMS
+.nav__items {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+      color: $on-primary;
+      display: inline-block;
+      margin-left: 16px;
+    }
+
+    i {
+      justify-self: flex-end;
+    }
+  }
+}
+
+.nav__items:nth-of-type(2) {
+  margin-top: 60px;
+}

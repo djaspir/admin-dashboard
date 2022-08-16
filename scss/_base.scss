@@ -2,9 +2,9 @@
 $primary: #0ea5e9;
 $on-primary: #ffffff;
 
-* {
-  border: 1px solid #222;
-}
+// * {
+//   border: 1px solid #222;
+// }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -30,6 +30,8 @@ html {
 
 body {
   margin: 0;
+  // MAIN FONT
+  font-family: "Roboto", sans-serif;
 }
 
 /**
