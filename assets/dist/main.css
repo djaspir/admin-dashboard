@@ -1,7 +1,3 @@
-* {
-  border: 1px solid #222;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -319,39 +315,45 @@ template {
   display: grid;
   height: 100vh;
   grid-template-columns: max(300px, 15%) 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-auto-rows: -webkit-min-content 1fr;
+  grid-auto-rows: min-content 1fr;
 }
-.container__header {
+
+.header {
   padding: 24px 48px;
-  grid-column: 2/3;
 }
-.container__nav {
+
+.nav {
   font-size: 1.5rem;
   background-color: #0ea5e9;
   color: #ffffff;
   grid-row: 1/3;
 }
-.container__nav h2 {
-  margin-left: 24px;
-}
-.container__main {
+
+.main {
   grid-row: 2/3;
+  background-color: rgba(185, 199, 209, 0.2);
+  padding: 12px 48px 48px 48px;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: 1fr 2fr;
+  gap: 12px;
 }
-.container__main .projects {
-  grid-row: 1/3;
-}
-.container__main .announcements {
+.main .projects {
   grid-row: 1/2;
 }
-.container__main .trending {
+.main .announcements {
+  grid-row: 1/2;
+}
+.main .trending {
   grid-row: 2/3;
 }
 
+.nav__title {
+  padding-left: 42px;
+}
 .nav__items {
   list-style-type: none;
-  padding: 0;
 }
 .nav__items li {
   font-size: 1.25rem;
@@ -369,53 +371,51 @@ template {
 .nav__items li i {
   justify-self: flex-end;
 }
-
 .nav__items:nth-of-type(2) {
   margin-top: 60px;
 }
 
-.container__header {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.top {
+.header__top {
   display: grid;
-  grid-template-columns: auto 1fr repeat(3, auto);
+  grid-template-columns: 1fr auto 1fr auto auto;
+  grid-auto-flow: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-.top input[type=search] {
-  justify-self: flex-start;
-  width: 724px;
+.header__top i {
+  justify-self: flex-end;
 }
-.top img {
+.header__top input[type=search] {
+  width: 824px;
+}
+.header__top img {
   width: 60px;
   height: auto;
   border-radius: 50%;
+  justify-self: flex-end;
 }
-.top h3 {
+.header__top h3 {
   white-space: nowrap;
 }
-
-.bottom {
+.header__bottom {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.bottom h2 {
+.header__bottom h2 {
   flex-grow: 1;
 }
-.bottom h2 span {
+.header__bottom h2 span {
   display: block;
   font-size: 1rem;
 }
-.bottom img {
+.header__bottom img {
   width: 80px;
   height: auto;
   border-radius: 50%;
 }
-.bottom button {
+.header__bottom button {
   padding: 8px 24px;
   background-color: #0ea5e9;
   color: #ffffff;
@@ -423,25 +423,50 @@ template {
   border: none;
   border-radius: 20px;
 }
-.bottom button:hover {
+.header__bottom button:hover {
   background-color: #1fb0f2;
 }
 
-.container__main {
-  padding: 12px 24px;
-  background-color: rgba(185, 199, 209, 0.2);
-}
-
-.projects {
+.container__card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
-  grid-template-rows: minmax(min-content, max-content);
+  grid-auto-rows: 1fr;
   gap: 12px;
 }
-.projects .card {
+.container__card .card {
   background-color: #ffffff;
+  border-radius: 10px;
+  border-left: 10px solid #03dac6;
+  padding: 24px;
+  display: grid;
 }
-.projects h2 {
-  grid-column: 1/3;
+.container__card .card h4 {
+  margin: 0 0 8px 0;
+}
+.container__card .card p {
+  margin: 0;
+}
+.container__card .card .buttons {
+  margin-top: 12px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.announcements .container-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 24px;
+}
+.announcements .wrapper-card {
+  border-bottom: 1px solid #999999;
+}
+.announcements h5 {
+  margin-bottom: 0;
+}
+.announcements p {
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+.announcements .wrapper-card:last-child {
+  border: none;
 }/*# sourceMappingURL=main.css.map */

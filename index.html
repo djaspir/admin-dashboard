@@ -21,19 +21,18 @@
     <link rel="stylesheet" href="./assets/dist/main.css" />
   </head>
   <body>
+    <!-- MAIN CONTAINER -->
     <div class="container">
       <!-- HEADER -->
-      <header class="container__header">
-        <!-- HEADER TOP -->
-        <div class="top">
+      <header class="header">
+        <div class="header__top">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="search" name="" id="" />
             <i class="fa-solid fa-bell"></i>
             <img src="./assets/img/gojo.jpg" alt="">
             <h3>Gojo Satoru</h3>
         </div>
-        <!-- HEADER BOTTOM -->
-        <div class="bottom">
+        <div class="header__bottom">
             <img src="./assets/img/gojo.jpg" alt="">
             <h2><span>Hi there,</span> Gojo Satoru (@gojo)</h2>
             <button>New</button>
@@ -42,8 +41,8 @@
         </div>
       </header>
       <!-- NAVIGATION -->
-      <nav class="container__nav">
-        <h2><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+      <nav class="nav">
+        <h2 class="nav__title"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
         <ul class="nav__items">
           <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
           <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
@@ -58,53 +57,46 @@
           <li><i class="fa-solid fa-lock"></i><a href="#">Privacy</a></li>
         </ul>
       </nav>
-      <main class="container__main">
+      <main class="main">
         <div class="projects">
           <h2>Projects</h2>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint reprehenderit soluta odit numquam consectetur?</p>
-          </div>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint reprehenderit soluta odit numquam consectetur?</p>
-          </div>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint reprehenderit soluta odit numquam consectetur?</p>
-          </div>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint reprehenderit soluta odit numquam consectetur?</p>
-          </div>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint reprehenderit soluta odit numquam consectetur?</p>
-          </div>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint reprehenderit soluta odit numquam consectetur?</p>
+          <div class="container__card">
+            <div class="card">
+              <div class="card-cotnent">
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia vero reprehenderit, dolor eos unde vitae, ea molestiae aut explicabo quam labore at veritatis doloribus nostrum illum accusantium aspernatur consequatur! Earum, inventore accusantium molestias sapiente doloribus omnis ad ullam non autem? Repellat officiis maxime quidem. Id adipisci nulla at saepe.</p>
+              </div>
+              <div class="buttons">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- ANNOUNCEMENTS -->
         <div class="announcements">
           <h2>Announcements</h2>
-          <div class="card">
-            <h5>Site Maintenance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime.</p>
-            <h5>Site Maintenance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime.</p>
-            <h5>Site Maintenance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime.</p>
+          <div class="container-card">
+            <div class="wrapper-card">
+              <h5>Site Maintenance</h5>
+            <p>Lorem ipsum dolor sit amet consectetur consectetur adipisicing elitconsectetur adipisicing elitconsectetur asicingadipisisectetur asicingadipisectetur asicingadipisectetur asicingadtur </p>
+            </div>
+            <div class="wrapper-card">
+              <h5>Site Maintenance</h5>
+              <p>Lorem ipsum dolor sit amet consectetur consectetur adipisicing elitconsectetur adipisicing elitconsectetur adipisicing elit elit. Iure, maxime.</p>
+            </div>
+            <div class="wrapper-card">
+              <h5>Site Maintenance</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime. consectetur adipisicing elit</p>
+            </div>
           </div>
-        </div>
-        <div class="trending">
-          <h2>Trending</h2>
-          <h5>Site Maintenance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime.</p>
-            <h5>Site Maintenance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime.</p>
-            <h5>Site Maintenance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, maxime.</p>
+          <div class="trending">
+            <h2>Trending</h2>
+            <div class="trending-container">
+              
+            </div>
+          </div>
         </div>
       </main>
     </div>
