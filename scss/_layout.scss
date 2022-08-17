@@ -25,7 +25,7 @@
 
     // Main Content Grid
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 1fr;
 
     & .projects {
       grid-row: 1 / 3;
