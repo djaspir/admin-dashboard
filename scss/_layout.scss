@@ -29,15 +29,11 @@
   grid-auto-rows: 1fr 2fr;
   gap: 24px;
 
-  & .project {
+  & .right {
     grid-row: 1 / 2;
   }
 
-  & .announcements {
+  & .left {
     grid-row: 1 / 2;
-  }
-
-  & .trending {
-    grid-row: 2 / 3;
   }
 }

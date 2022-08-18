@@ -339,14 +339,11 @@ template {
   grid-auto-rows: 1fr 2fr;
   gap: 24px;
 }
-.main .project {
+.main .right {
   grid-row: 1/2;
 }
-.main .announcements {
+.main .left {
   grid-row: 1/2;
-}
-.main .trending {
-  grid-row: 2/3;
 }
 
 .nav__title {
@@ -453,21 +450,51 @@ template {
   align-self: flex-end;
 }
 
-.announcement__container {
+.announcement {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 12px 24px;
+  margin-bottom: 48px;
 }
-.announcement__card {
+.announcement__item {
   border-bottom: 1px solid #999999;
 }
-.announcement:last-child {
+.announcement__item:last-child {
+  margin-bottom: 18px;
   border: none;
 }
 .announcement h5 {
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 .announcement p {
   margin-top: 0;
   font-size: 0.8rem;
+}
+
+.trending__container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+}
+.trending__container .trending__item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.trending__container .trending__item:last-child {
+  margin-bottom: 0;
+}
+.trending__container .trending__item img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+.trending__container .trending__item p {
+  font-size: 0.8rem;
+}
+.trending__container .trending__item p > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
 }/*# sourceMappingURL=main.css.map */

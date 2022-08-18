@@ -117,28 +117,59 @@
     }
   }
 }
-// ANNOUNCEMENTS CONTAINER
+// ANNOUNCEMENTS  AND TRENDING
 .announcement {
-  &__container {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 12px 24px;
-  }
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 24px;
+  margin-bottom: 48px;
 
-  &__card {
+  &__item {
     border-bottom: 1px solid #999999;
-  }
 
-  &:last-child {
-    border: none;
+    &:last-child {
+      margin-bottom: 18px;
+      border: none;
+    }
   }
 
   h5 {
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
 
   p {
     margin-top: 0;
     font-size: 0.8rem;
+  }
+}
+// TRENDING CONTAINER
+.trending__container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+
+  .trending__item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    p > span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
   }
 }
