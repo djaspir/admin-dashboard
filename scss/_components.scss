@@ -1,29 +1,27 @@
 // NAV
 .nav {
   &__title {
-    padding-left: 42px;
+    padding-left: 40px;
   }
 
   &__items {
     list-style-type: none;
+    padding: 0;
 
     li {
       font-size: 1.25rem;
-      margin-bottom: 16px;
-      display: grid;
-      grid-template-columns: 1fr 5fr;
-      gap: 8px;
-
+      display: flex;
+      padding: 12px 24px;
       a {
         text-decoration: none;
         color: $on-primary;
-        display: inline-block;
         margin-left: 16px;
       }
+    }
 
-      i {
-        justify-self: flex-end;
-      }
+    li:hover {
+      background-color: lighten($primary, 5%);
+      cursor: pointer;
     }
   }
 
@@ -92,13 +90,13 @@
   }
 }
 // PROJECT
-.container__card {
+.project__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 12px;
+  gap: 24px;
   // CARD CONTENT
-  .card {
+  .project__card {
     background-color: #ffffff;
     border-radius: 10px;
     border-left: 10px solid $secondary;
@@ -110,7 +108,9 @@
     p {
       margin: 0;
     }
-    .buttons {
+    .project__buttons {
+      display: flex;
+      gap: 12px;
       margin-top: 12px;
       justify-self: flex-end;
       align-self: flex-end;
@@ -118,15 +118,19 @@
   }
 }
 // ANNOUNCEMENTS CONTAINER
-.announcements {
-  .container-card {
+.announcement {
+  &__container {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 12px 24px;
   }
 
-  .wrapper-card {
+  &__card {
     border-bottom: 1px solid #999999;
+  }
+
+  &:last-child {
+    border: none;
   }
 
   h5 {
@@ -136,9 +140,5 @@
   p {
     margin-top: 0;
     font-size: 0.8rem;
-  }
-
-  .wrapper-card:last-child {
-    border: none;
   }
 }
