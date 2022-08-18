@@ -383,7 +383,14 @@ template {
   justify-self: flex-end;
 }
 .header__top input[type=search] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 1.05rem;
+  padding: 4px 12px;
   width: 824px;
+  border-radius: 12px;
+  border: 1px solid #999999;
 }
 .header__top img {
   width: 60px;
@@ -454,7 +461,7 @@ template {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 12px 24px;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 .announcement__item {
   border-bottom: 1px solid #999999;
